@@ -1,4 +1,4 @@
--body {
+body {
     background-color: #000000;
     background-image: linear-gradient(to bottom, #000000, #dadae5);
 }
@@ -103,7 +103,7 @@ h2{
     height:600px;
 }
 
-h3,h4, p, li
+h3, h4, li
 {
     position: relative;
     padding: 0;
@@ -140,7 +140,7 @@ h5 {
     float: left;
     background-color: #15ccbe;
     color: white;
-    font-family: "Helvetica Neue", Unispace, ui-monospace;
+    font-family: "Cambria Math", monospace;
     padding-top: 10px;
     text-align: center;
     margin: 15px;
@@ -156,6 +156,15 @@ h5 {
     background-color: #63aac2;
     opacity:10;
 }
+
+p {
+    position: relative;
+    text-align: center;
+    font-family: "Helvetica Neue", sans-serif;
+    top: -15px;
+}
+
+
 
 
 .Image {
@@ -183,8 +192,8 @@ img:hover {
 
 .form{
 
-    marging-top: 2.5px;
-    margin-bottom: 2.5px;
+    marging-top: 3px;
+    margin-bottom: 3px;
 
 
 
@@ -196,6 +205,7 @@ input{
     border-bottom: 1px solid #0000ff;
 
 }
+
 input::placeholder{
 
     color: blue;
