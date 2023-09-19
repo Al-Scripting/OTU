@@ -1,83 +1,129 @@
-*{
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body {
-    margin: 0;
-    padding: 0;
-    background: black;
-    color: white;
-}
-
-
-.container{
+/* Styling the container for the webpage */
+.container {
     width: 100%;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 4, 40, 0.34), rgba(12, 22, 117, 0.8)), url(fullstars.jpg);
-    padding: 10px;
+    min-height: 100vh; /* Minimum height to fill the viewport */
+    background-image: linear-gradient(rgba(0, 4, 40, 0.73), rgba(12, 22, 117, 0.8)), url(fullstars.jpg); /* Background with gradient overlay and image */
+    padding: 10px; /* Padding inside the container */
 }
 
-nav{
+/* Styling the navigation bar */
+nav {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.logo{
-    width: 60px;
-    cursor: pointer;
-    border-radius: 50%;
+/* Styling the logo */
+#logo {
     position: relative;
-    left: 3000%;
+    right: 1%;
+    max-width: 60px;
+    border-radius: 60%;
+    cursor: pointer; /* Cursor style on hover */
 }
 
-
-nav ul{
+/* Styling the navigation list */
+nav ul {
     list-style: none;
     width: 100%;
-    text-align: left;
-    padding: 20px
+    text-align: right;
+    padding: 20px;
 }
 
-nav ul li{
+/* Styling individual navigation list items */
+nav ul li {
     display: inline-block;
-    margin: 10px 20px;
+    margin: 5px 20px;
 }
 
-nav ul li a{
+/* Styling links within navigation list items */
+nav ul li a {
     text-decoration: none;
+    font-family: Calibri, sans-serif;
     color: white;
 }
 
-nav ul li a:hover{
-    font-size:18px;
+/* Styling links on hover */
+nav ul li a:hover {
+    font-size: 18px;
+    color: #755C00;
 }
 
-
-header{
-    border-bottom: 5px solid #ffffff;
-    border-radius: 10px;
-    background: rgba(0, 12, 117, 0.65);
-
+/* Styling the header section */
+header {
+    border-bottom: 1px solid #ffffff;
+    position: sticky; /* Header sticks to the top of the viewport */
 }
 
+/* Center the content both vertically and horizontally */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ensure it takes up at least the full viewport height */
+}
 
+/* Styling for the content section */
+.content-inner {
+    padding: 20px; /* Padding for content */
+    border-radius: 5px; /* Rounded corners for content */
+    text-align: center; /* Center-align text */
+}
+
+.content-inner h1 {
+    font-size: 48px; /* Font size for the heading */
+    color: #ffffff; /* Text color for the heading */
+}
+
+.content-inner p {
+    font-size: 32px; /* Font size for paragraphs */
+    color: #ffffff; /* Text color for paragraphs */
+    margin: 10px 0; /* Margin between paragraphs */
+}
+
+/* Styling the footer section */
 .footer {
-    position:fixed;
+    position: fixed; /* Footer is fixed to the bottom of the viewport */
     color: white;
-    bottom:0;
-    left:0;
-    width:100%;
-    height: 90px;
-    background-color: rgba(0, 4, 40, 0.61);;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 4, 40, 0.55);
     border-radius: 5px;
+    font-family: Calibri, sans-serif;
+    align-items: center;
 }
 
-.footer{
+/* Styling an image within the footer */
+.footer img {
+    position: relative;
+    max-width: 60px;
+    border-radius: 60%;
+    left: 48%;
+    bottom: 40%;
+    border: 3px solid;
+}
 
+/* Styling an article within the footer */
+.footer article {
+    bottom: -80%;
+    text-align: left;
+    position: relative;
+}
+
+/* Styling paragraph within the footer */
+.footer p {
+    bottom: -40%;
+    text-align: center;
+    position: relative;
+    padding: 10px;
 }
