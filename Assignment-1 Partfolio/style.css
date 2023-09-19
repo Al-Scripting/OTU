@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 4, 40, 0.34), rgba(12, 22, 117, 0.8)), url(fullstars.jpg);
+    padding: 10px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    left: 3000%;
+}
+
+
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    padding: 20px
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    font-size:18px;
+}
+
+
+header{
+    border-bottom: 5px solid #ffffff;
+    border-radius: 10px;
+    background: rgba(0, 12, 117, 0.65);
+
+}
+
+
+.footer {
+    position:fixed;
+    color: white;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    background-color: rgba(0, 4, 40, 0.61);;
+    border-radius: 5px;
+}
+
+.footer{
+
+}
