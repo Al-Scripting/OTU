@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title> <!-- Setting the page title -->
-    <link href="style.css" rel="stylesheet" type="text/css"> <!-- Linking to an external CSS stylesheet -->
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
 <body>
-<div class="container"> <!-- Main container for the webpage -->
 
-    <div class="navigation-bar"> <!-- Navigation bar section -->
-        <header>
-            <nav>
-                <a href="index.html"><img src="Logo.png" id="logo" alt="NOT FOUND"></a> <!-- Logo and link to the homepage -->
-                <ul>
-                    <li><a href="index.html">Home</a></li> <!-- Home page link -->
-                    <li><a href="contact.html">Contact</a></li> <!-- Contact page link -->
-                    <li><a href="project.html">Projects</a></li> <!-- Projects page link -->
-                    <li><a href="about.html">About Me</a></li> <!-- About Me page link -->
-                </ul>
-            </nav>
-        </header>
+<!-- Header -->
+<header id="Header">
+    <div class="container">
+        <!-- Navigation -->
+        <a href = "index.html"><img src="logo.webp" alt="NOT FOUND" id = "logo"></a>
+        <div class="navigation-Bar">
+            <!-- logo -->
+            <div class="content">
+                <nav class="nav-list">
+                    <a href="index.html" class="element">Home</a>
+                    <a href="about.html" class="element">About</a>
+                    <a href="contact.html" class="element">Contact</a>
+                    <a href="projects.html" class="element">Projects</a>
+                </nav>
+            </div>
+        </div>
     </div>
+</header>
+<!-- End Header -->
 
-    <div class="content"> <!-- Content section -->
-        <iframe src="https://www.youtube.com/embed/hvL1339luv0" title="Never gonna Meow you up"></iframe>
+<!-- About Section  -->
+    <div class="about"> <!-- Content section -->
         <div class="box">
             <h1>Al Muqshith Shifan</h1>
             <h5>Networking & IT Student Ontario Tech</h5>
@@ -33,20 +39,25 @@
                 student at Ontario Tech University, where I'm honing my skills in Networking and IT
                 Programming.</article>
         </div>
-
+        <div class="video-container">
+            <video controls>
+                <source src="Aboutme.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
 
-    <div class="footer"> <!-- Footer section -->
-        <footer>
-            <p><a href="mohamealmusqi.mohamedshifan@ontariotechu">mohamealmusqi.mohamedshifan@ontariotechu.</a></p> <!-- Contact email -->
-            <p>&#169;2023 by Al-Muqshith Shifan</p> <!-- Copyright information -->
-        </footer>
-        <img src="Logo.png" alt="NOT FOUND"> <!-- An image in the footer -->
+<!-- Footer Section  -->
+<footer class="footer">
+    <div class="left-content">
+        <p class="email">email@example.com</p>
+        <p class="copy-right">© 2021 Your Name</p>
     </div>
-
-</div>
-
-
+    <div class="right-content">
+        <img src="Kirby.webp" alt="Logo">
+        <img src="kirby-puffy.png" alt="Hover Image" id="hover-image" />
+    </div>
+</footer>
+<!-- End of Footer Section  -->
 
 </body>
 </html>

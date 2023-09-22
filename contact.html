@@ -1,63 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title> <!-- Setting the page title -->
-    <link href="style.css" rel="stylesheet" type="text/css"> <!-- Linking to an external CSS stylesheet -->
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
 <body>
-<div class="container"> <!-- Main container for the webpage -->
-
-    <div class="navigation-bar"> <!-- Navigation bar section -->
-        <header>
-            <nav>
-                <a href="index.html"><img src="Logo.png" id="logo" alt="NOT FOUND"></a> <!-- Logo and link to the homepage -->
-                <ul>
-                    <li><a href="index.html">Home</a></li> <!-- Home page link -->
-                    <li><a href="contact.html">Contact</a></li> <!-- Contact page link -->
-                    <li><a href="project.html">Projects</a></li> <!-- Projects page link -->
-                    <li><a href="about.html">About Me</a></li> <!-- About Me page link -->
-                </ul>
-            </nav>
-        </header>
+<header id="Header">
+    <div class="container">
+        <!-- Navigation -->
+        <a href = "index.html"><img src="gfqx6h53p8n91.webp" alt="NOT FOUND" id = "logo"></a>
+        <div class="navigation-Bar">
+            <!-- logo -->
+            <div class="content">
+                <nav class="nav-list">
+                    <a href="index.html" class="element">Home</a>
+                    <a href="about.html" class="element">About</a>
+                    <a href="contact.html" class="element">Contact</a>
+                    <a href="projects.html" class="element">Projects</a>
+                </nav>
+            </div>
+        </div>
     </div>
+</header>
+<!-- End Header -->
 
-    <div class="form-box">
-        <form action="" id="contactForm">
-            <div class="pageTitle title">Reach Out!</div>
-            <div class="secondaryTitle title">Please fill out this Form.</div>
-            <label for="Name"></label><input type="text" class="name formEntry" id="Name" placeholder="Name | Joe Doe" />
-            <label for="Email"></label><input type="email" class="email formEntry" id="Email" required placeholder="Email | user@mail.com"/>
 
-            <label for="phone"></label><input type="tel" class="tel formEntry" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Phone number | (647)-559-6753"/>
 
-            <label for="Message"></label><textarea class="message formEntry" id="Message" placeholder="Comments"></textarea>
-            <label>
-                <input type="checkbox" class="termsConditions" value="Term" required>
-            </label>
 
-            <label style="color: #ffffff"> I Accept the <span style="color: #42bb7c">Terms of Use</span> & <span style="color: #42bb7c">Privacy Policy</span>.</label><br>
-
-            <button class="submit formEntry" id="submit" >Submit</button>
-        </form>
+<!-- Footer Section  -->
+<footer class="footer">
+    <div class="left-content">
+        <p class="email">email@example.com</p>
+        <p class="copy-right">© 2021 Your Name</p>
     </div>
-
-
-    <div class="footer"> <!-- Footer section -->
-        <footer>
-        <p><a href="mohamealmusqi.mohamedshifan@ontariotechu">mohamealmusqi.mohamedshifan@ontariotechu.</a></p> <!-- Contact email -->
-        <p>&#169;2023 by Al-Muqshith Shifan</p> <!-- Copyright information -->
-        </footer>
-        <img src="Logo.png" alt="NOT FOUND"> <!-- An image in the footer -->
+    <div class="right-content">
+        <img src="Kirby.webp" alt="Logo">
+        <img src="kirby-puffy.png" alt="Hover Image" id="hover-image" />
     </div>
-
-
-
-</div>
-
-
-
-
+</footer>
+<!-- End of Footer Section  -->
 
 </body>
 </html>

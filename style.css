@@ -1,141 +1,239 @@
-/* Resetting default margin, padding, and box-sizing for all elements */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 * {
     margin: 0;
     padding: 0;
-    font-family: Calibri, sans-serif;
     box-sizing: border-box;
 }
 
-/* Styling the container for the webpage */
-.container {
-    width: 100%;
-    min-height: 100vh; /* Minimum height to fill the viewport */
-    background-image: linear-gradient(rgba(0, 4, 40, 0.73), rgba(12, 22, 117, 0.8)), url(fullstars.jpg); /* Background with gradient overlay and image */
-    padding: 10px; /* Padding inside the container */
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
-/* Styling the navigation bar */
-nav {
-    width: 100%;
+#wrapper{
+    min-height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    felx-direction: column;
 }
 
-/* Styling the logo */
-#logo {
-    position: relative;
-    right: 1%;
-    max-width: 60px;
-    border-radius: 60%;
-    cursor: pointer; /* Cursor style on hover */
-}
 
-/* Styling the navigation list */
-nav ul {
-    list-style: none;
+body{
+    background: linear-gradient(to right, #153440, #593442);
+    min-height: 100vh;
     width: 100%;
-    text-align: right;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Styling individual navigation list items */
-nav ul li {
-    display: inline-block;
-    margin: 5px 20px;
-}
-
-/* Styling links within navigation list items */
-nav ul li a {
+a {
     text-decoration: none;
-    font-size: 24px;
-    color: white;
 }
 
-/* Styling links on hover */
-nav ul li a:hover {
-    font-size: 32px;
-    color: #755C00;
-}
 
-/* Styling the header section */
+/* Header section */
 header {
-    border-bottom: 1px solid #ffffff;
-    position: sticky; /* Header sticks to the top of the viewport */
+    position: sticky;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
 }
 
-/* Center the content both vertically and horizontally */
-.content {
+.navigation-Bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 5%;
-    min-height: 80vh; /* Ensure it takes up at least the full viewport height */
+    text-align: right;
 }
 
-/* Styling for the content section */
-.content-inner {
-    padding: 20px; /* Padding for content */
-    border-radius: 5px; /* Rounded corners for content */
-    text-align: center; /* Center-align text */
+#logo {
+    position: absolute;
+    height: 100px;
 }
 
-.content-inner h1 {
-    font-size: 48px; /* Font size for the heading */
-    color: #ffffff; /* Text color for the heading */
+.content{
+    position: absolute;
+    right: 0;
+    top: 5%;
 }
 
-.content-inner p {
-    font-size: 32px; /* Font size for paragraphs */
-    color: #ffffff; /* Text color for paragraphs */
-    margin: 10px 0; /* Margin between paragraphs */
+.nav-list {
+    text-align: center;
+    background: #D91E0D;
+    padding: 10px 20px;
+    height: 100%;
+    border-bottom-left-radius: 18px;
 }
 
-/* Styling the footer section */
-.footer {
-    position: fixed; /* Footer is fixed to the bottom of the viewport */
-    display: flex;
+.element{
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
     color: white;
+    font-size: 18px;
+}
+
+/* End of Header section */
+
+/*Footer section */
+.footer {
+    position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 10%;
-    background-color: rgba(0, 4, 40, 0.8);
-    align-items: center;
-    padding: 3px;
+    right: 0;
+    height: 50px;
+    background-color: #D91E0D;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
-/* Styling an image within the footer */
+.left-content {
+    text-align: left;
+}
+
+.right-content {
+    text-align: right;
+}
+
+.email {
+    margin-bottom: 5px;
+}
+
 .footer img {
     position: absolute;
-    max-width: 60px;
-    border-radius: 60%;
-    left: 90%;
+    width: 45px;
+    right: 1%;
+    top:2%;
+    cursor: pointer;
+}
+
+#hover-image {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.right-content:hover #hover-image {
+    opacity: 1;
+}
+
+
+
+p {
+    font-size: 12px;
+    color: #F2DFEB;
+}
+
+/* End of Footer section */
+
+
+
+/* Main Page section */
+.main-container {
+    top: 35%;
+    position: absolute;
+    left: 5%;
+    justify-content: flex-start;
+}
+
+.main-picture #mainPic{
+    position: absolute;
+    right: -50%;
+    bottom: 5%;
+    height: 500px;
+    opacity: 75% ;
+    border-radius: 20%;
+}
+
+#main h1 {
     display: block;
-    border: 3px solid;
-}
-
-/* Styling an article within the footer */
-.footer footer {
-    text-align: left;
+    width: fit-content;
+    font-size: 10rem;
     position: relative;
-    left: 1%;
-}
-
-/* Styling paragraph within the footer */
-.footer footer p {
-    text-align: left;
-    position: relative;
-}
-
-footer p a {
-    text-decoration: none;
     color: white;
 }
 
+#main .main-picture h1{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #F2DFEB;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 0.5s;
+}
+
+.about-button {
+    display: inline-block;
+    position: absolute;
+    bottom: -10%;
+    color: #F2DFEB;
+    background-color: transparent;
+    border: 2px solid #D91E0D;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.about-button a {
+    text-decoration: none;
+}
+/* END Main Page section */
+
+
+/* About Page section */
+.about-container {
+    top: 30%;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.about-container{
+    background: #593442;
+    max-width: 300px;
+    border-radius: 20%;
+    text-align: center;
+
+}
+
+.about-container img{
+    box-shadow: 0 5px 8px rgba(242, 223, 235, 0.56);
+    border-radius: 25%;
+    width:250px;
+    border: 5px solid #D91E0D;
+}
+
+.title {
+    color: #F2DFEB;
+    font-size: 18px;
+}
+
+#about .about-container h1{
+    color: #F2DFEB;
+    font-size: 10px;
+    text-align: center;
+}
+
+#about .about-container p{
+    color: #F2DFEB;
+    font-size: 10px;
+    text-align: center;
+}
+/* End of About Page section */
+
 /*ABOUT ME PAGE*/
+.about{
+    position: absolute;
+    bottom:25%;
+}
+
 
 .box{
+    background: conic-gradient(#D98989, #F2DFEB, #593442);
     position: relative;
     width: 40%;
     padding: 4%;
@@ -145,159 +243,33 @@ footer p a {
     font-family: "Calibri", sans-serif;
 }
 
-iframe{
-    position: relative;
-    top: -50%;
-    left: 2%;
-    width: 400px;
-    height:250px;
-    transition: all 800ms;
-}
-
-
 .box h1{
+    background: #153440;
+    box-shadow: 0 5px 10px white;
     font-size: 40px;
     letter-spacing: 4px;
     font-weight: 100;
 }
 
 .box h5{
+    background: #153440;
     font-size:25px;
     letter-spacing: 3px;
 }
 
 .box article{
+    font-style: normal;
+    background: #153440;
+    font-weight:bold;
+    position: relative;
     padding-top: 20px;
     font-size: 18px;
 }
 
-/*ABOUT ME PAGE*/
-
-/*Contact Page*/
-
-#title-Tag-Line {
-    font-size:20px;
-}
-
-.form-box {
-    background: linear-gradient(#000429, #000000);
-    width: 100%;
-    height: 95vh;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    animation: bounce 1.5s infinite;
-
-}
-::-webkit-input-placeholder {
-    font-size: 1.3em;
-}
-.title{
-    display: block;
-    padding-top: 5px;
-    text-align: center;
-    color: white;
-    font-family: sans-serif;
-    margin: 10px auto 5px;
-    width: 300px;
-}
-
-.termsConditions{
-    color: white;
-}
-
-.pageTitle{
-    font-size: 2em;
-    font-weight: bold;
-}
-.secondaryTitle{
-    color: #ffffff;
-}
-
-.name {
-    background-color: #ffffff;
-    color: #000000;
-}
-.name:hover {
-    border-bottom: 5px solid #755C00;
-    height: 30px;
-    width: 380px;
-    transition: ease 0.5s;
-}
-
-.email {
-    background-color: #ffffff;
-    height: 2em;
-    color: #000000;
-}
-
-.email:hover {
-    border-bottom: 5px solid #755C00;
-    height: 30px;
-    width: 380px;
-    transition: ease 0.5s;
-}
-
-.message {
-    background-color: #ffffff;
-    color: #000000;
-    overflow: hidden;
-    height: 10rem;
-}
-
-.message:hover {
-    border-bottom: 5px solid #755C00;
-    height: 12em;
-    width: 380px;
-    transition: ease 0.5s;
-}
-
-
-.tel{
-    background-color: #ffffff;
-    color: #000000;
-    overflow: hidden;
-    height: 2em;
-}
-
-
-.tel:hover {
-    border-bottom: 5px solid #755C00;
-    height: 30px;
-    width: 380px;
-    transition: ease 0.5s;
-}
-
-.formEntry {
-    display: block;
-    margin: 30px auto;
-    min-width: 300px;
-    padding: 10px;
-    border-radius: 2px;
-    border: none;
-    transition: all 0.5s ease 0s;
-}
-
-.submit {
-    width: 200px;
-    color: #ffffff;
-    background-color: #755C00;
-    font-size: 20px;
-}
-
-.submit:hover {
-    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
-    transform: translateY(-3px);
-    width: 300px;
-    border-top: 5px solid #ffffff;
-    border-radius: 0%;
-}
-
-@keyframes bounce {
-    0% {
-        tranform: translate(0, 4px);
-    }
-    50% {
-        transform: translate(0, 4px);
-    }
+.video-container {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    margin: auto;
+    padding: 5px;
 }
