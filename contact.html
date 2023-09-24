@@ -3,44 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
 
 </head>
 <body>
-<header id="Header">
-    <div class="container">
-        <!-- Navigation -->
-        <a href = "index.html"><img src="gfqx6h53p8n91.webp" alt="NOT FOUND" id = "logo"></a>
-        <div class="navigation-Bar">
-            <!-- logo -->
-            <div class="content">
-                <nav class="nav-list">
-                    <a href="index.html" class="element">Home</a>
-                    <a href="about.html" class="element">About</a>
-                    <a href="contact.html" class="element">Contact</a>
-                    <a href="projects.html" class="element">Projects</a>
-                </nav>
+    <header id="Header">
+        <div class="container">
+            <!-- Navigation -->
+            <a href = "index.html"><img src="Assets/logo.webp" alt="NOT FOUND" id = "logo"></a>
+            <div class="navigation-Bar">
+                <!-- logo -->
+                <div class="content">
+                    <nav class="nav-list">
+                        <a href="index.html" class="element">Home</a>
+                        <a href="about.html" class="element">About</a>
+                        <a href="contact.html" class="element">Contact</a>
+                        <a href="projects.html" class="element">Projects</a>
+                    </nav>
+                </div>
             </div>
         </div>
+    </header>
+    <!-- End Header -->
+
+
+    <div class="form-container">
+        <form>
+            <div class="input-section">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="input-section">
+                <label for="number">Phone #</label>
+                <input type="text" id="number" required>
+
+            </div>
+
+            <div class="input-section">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="input-section">
+                <label for="comments">Comments</label>
+                <textarea id="comments" rows="8" required></textarea>
+
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+
+
     </div>
-</header>
-<!-- End Header -->
+
+
+    <!-- END of Form -->
 
 
 
 
-<!-- Footer Section  -->
-<footer class="footer">
-    <div class="left-content">
-        <p class="email">email@example.com</p>
-        <p class="copy-right">© 2021 Your Name</p>
-    </div>
-    <div class="right-content">
-        <img src="Kirby.webp" alt="Logo">
-        <img src="kirby-puffy.png" alt="Hover Image" id="hover-image" />
-    </div>
-</footer>
-<!-- End of Footer Section  -->
+    <!-- Footer Section  -->
+    <footer class="footer">
+        <div class="left-content">
+            <p class="email">email@example.com</p>
+            <p class="copy-right">© 2021 Your Name</p>
+        </div>
+        <div class="right-content">
+            <img src="Assets/Kirby.webp" alt="Logo">
+            <img src="Assets/kirby-puffy.png" alt="Hover Image" id="hover-image" />
+        </div>
+    </footer>
+    <!-- End of Footer Section  -->
 
 </body>
 </html>
