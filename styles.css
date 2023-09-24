@@ -36,6 +36,7 @@ header {
 }
 
 .navigation-Bar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,7 +131,7 @@ p {
     top: 35%;
     position: absolute;
     left: 5%;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .main-picture #mainPic{
@@ -157,8 +158,6 @@ p {
     height: 100%;
     width: 0;
     background-color: #F2DFEB;
-    animation: text_reveal_box 1s ease;
-    animation-delay: 0.5s;
 }
 
 .about-button {
@@ -184,15 +183,12 @@ p {
     top: 30%;
     position: relative;
     justify-content: flex-start;
-}
-
-.about-container{
     background: #593442;
     max-width: 300px;
     border-radius: 20%;
     text-align: center;
-
 }
+
 
 .about-container img{
     box-shadow: 0 5px 8px rgba(242, 223, 235, 0.56);
@@ -320,7 +316,7 @@ button{
     padding: 10px 0;
     outline: none;
     color : #fff;
-    background: transparent;
+    background: linear-gradient(to top, #D91E0D, #D98989);
     border: 1px solid #D98989;
     width: 100%;
 }
