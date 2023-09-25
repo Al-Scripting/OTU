@@ -7,7 +7,6 @@ About Me:
 quest to create, innovate, and explore the endless possibilities of technology. Nestled in the heart of Ontario, Canada, I've embarked on an exciting journey
 as a student at Ontario Tech University, where I'm honing my skills in Networking and IT Programming."
 
-
 Coding Videos for inspiration:
 https://www.youtube.com/watch?v=10Z6UIe7R1E
 https://www.youtube.com/watch?v=V0cd7i4aCb8 | General Idea of how a website should look
