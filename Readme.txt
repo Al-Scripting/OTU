@@ -17,7 +17,9 @@ https://www.majesticform.com/form-guides/html-email-form
 https://www.w3schools.com/howto/howto_css_about_page.asp
 https://www.learningrobo.com/2021/09/modern-and-responsive-about-me-page.html
 https://www.w3schools.com/howto/howto_css_responsive_header.asp
-
+https://www.instructables.com/Make-your-HTML-Website-suitable-for-Mobile-Devices/
+https://css-tricks.com/resolution-specific-stylesheets/
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiX-YHWi8eBAxW_hIkEHZAMBqgQFnoECA0QAw&url=https%3A%2F%2Fmedium.com%2Fclaritydesignsystem%2Fpure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3&usg=AOvVaw1rGRsJedio9VVWvo3uUVw_&opi=89978449
 
 Picture Source:
 main.png: https://www.freepik.com | FreePik

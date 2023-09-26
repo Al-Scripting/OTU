@@ -1,0 +1,326 @@
+/* Mobile Styles */
+@media screen  and (max-width: 480px) {
+
+    /* Reset styles for all screens */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Base styles for all screens */
+    html {
+        font-size: 10px;
+        font-family: 'Montserrat', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: linear-gradient(to right, #153440, #593442);
+        min-height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* Header section */
+    header {
+        position: sticky;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Navigation bar styles for mobile */
+    .navigation-Bar {
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    /* Logo styles for mobile */
+    #logo {
+        height: 50px; /* Adjust as needed */
+    }
+
+    .content {
+        position: absolute;
+        right: 0;
+        top: 5%;
+    }
+
+    .nav-list {
+        text-align: left;
+        background: #D91E0D;
+        padding: 10px 20px;
+        height: 100%;
+        width: 100%;
+        border-bottom-left-radius: 18px;
+    }
+
+    .element {
+        display: inline-block; /* Display elements as block for mobile */
+        padding: 5px 5px;
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        text-align: left;
+    }
+    /* End of Header section */
+
+
+    /* Footer section */
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: #D91E0D;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    /* Adjust footer alignment for mobile */
+    .left-content {
+        text-align: center; /* Center-align content */
+    }
+
+    .right-content {
+        text-align: center; /* Center-align content */
+    }
+
+    .email {
+        margin-bottom: 5px;
+    }
+
+    .footer img {
+        display: inline-block;
+        position: absolute;
+        width: 30px;
+        right: 4%;
+        top: 0;
+        cursor: pointer;
+    }
+
+    #hover-image {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .right-content:hover #hover-image {
+        opacity: 1;
+    }
+
+    p {
+        font-size: 12px;
+        color: #F2DFEB;
+    }
+
+    /* Main Page section */
+    .main-container {
+        display: flex;
+        flex-direction: column; /* Stack content for mobile */
+        align-items: center;
+        justify-content: center;
+        height: auto; /* Remove fixed height */
+        padding: 20px; /* Add padding for mobile */
+    }
+
+    .text-container {
+        text-align: center; /* Center-align text for mobile */
+        margin: 10px 0; /* Adjust margin as needed */
+        color: white;
+    }
+
+    .text-container p {
+        padding-top: 15px;
+        font-size: 6rem; /* Adjust font size for mobile */
+        margin: 0;
+    }
+
+    .image-container {
+        text-align: center; /* Center-align content for mobile */
+    }
+
+    #main img {
+        width: 100%; /* Adjust image width for mobile */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 50%;
+        vertical-align: auto;
+    }
+
+    .about-button {
+        color: #F2DFEB;
+        background-color: transparent;
+        border: 2px solid #D91E0D;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+    }
+
+    /* About Page section */
+    .about-section {
+        text-align: center; /* Center-align content on mobile */
+        padding: 20px; /* Add padding for mobile */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Remove fixed height */
+        border: 3px solid #D98989;
+        margin: 5px 0; /* Adjust margin as needed */
+        padding: 10px;
+    }
+
+    .about-box img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Set a maximum height for mobile */
+        border: 1px solid #000000;
+        object-fit: contain;
+    }
+
+    .about-box article {
+        font-size: 18px; /* Reduce font size for mobile */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .video {
+        border: 5px solid #D91E0D;
+        margin: 10px 0; /* Adjust margin as needed */
+        padding: 10px;
+    }
+
+    /* Resize the video to be smaller than the box */
+    .video video {
+        max-width: 100%; /* Ensure the video is not wider than the box */
+        height: auto; /* Maintain the video's aspect ratio */
+    }
+
+    /* End of About Page section */
+
+    /* Contact Page */
+    .form-container {
+        display: flex;
+        flex-direction: column; /* Stack content for mobile */
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto; /* Remove fixed height */
+        margin-top: 30%;
+        padding-bottom: 10px;
+    }
+
+    form {
+        width: 90%;
+        height: auto;
+        max-width: 600px;
+    }
+
+    .form-title {
+        height: 100%;
+        padding-top: 20px;
+        color: #F2DFEB;
+        font-size: 15px;
+        cursor: text;
+        text-align: center;
+    }
+
+    .input-section {
+        margin-bottom: 30px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 5px;
+        outline: 0;
+        border: 1px solid #D91E0D;
+        color: #fff;
+        background: transparent;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    label {
+        height: 100%;
+        color: #F2DFEB;
+        font-size: 24px;
+        cursor: text;
+    }
+
+    button {
+        padding: 5px 0;
+        outline: none;
+        color: #fff;
+        background: linear-gradient(to top, #D91E0D, #D98989);
+        border: 1px solid #D98989;
+    }
+
+    /* Projects Page */
+        .Project-area {
+            width: 100%;
+            height: auto;
+            text-align: center; /* Center-align content on mobile */
+            padding: 20px; /* Add padding for mobile */
+        }
+
+        .Project-area h1 {
+            font-size: 36px; /* Reduce font size for mobile */
+            margin-top: 5%; /* Adjust margin as needed */
+            margin-bottom: 2.5%;
+        }
+
+        .section {
+            width: 100%;
+            height: auto; /* Remove fixed height */
+            margin-bottom: 5%; /* Adjust margin as needed */
+            padding: 10px 10px 10px; /* Add padding for mobile */
+        }
+
+        /* Adjust image size and margin for mobile */
+        #project1 img,
+        #project2 img,
+        #project3 img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            max-height: 200px; /* Set a maximum height for mobile */
+            object-fit: contain;
+            border-radius: 15%;
+            margin: 10px 0; /* Adjust margin as needed */
+        }
+
+        /* Adjust text styles for mobile */
+        #project1 article, #project2 article, #project3 article {
+            font-size: 18px; /* Reduce font size for mobile */
+            text-align: center;
+            padding: 10px;
+        }
+
+        #project1 article h1, #project2 article h1, #project3 article h1 {
+            font-size: 24px; /* Reduce font size for mobile */
+            margin-top: 10px;
+            text-align: center;
+            text-decoration: underline; /* Fix the typo in 'text-underline' */
+        }
+    }
+
+
+
+
