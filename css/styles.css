@@ -13,7 +13,7 @@ html {
 
 
 body{
-    background: linear-gradient(to right, #153440, #593442);
+    background: linear-gradient(#153440, #593442);
     min-height: 100vh;
     width: 100%;
     margin: 0;
@@ -85,6 +85,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
+
 }
 
 .left-content {
@@ -171,15 +172,18 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     width:100%;
-    height:100vh;
+    height:100%;
+    padding-top: 10%;
+    padding-bottom: 5%;
     background-position: center;
 }
 
 .about-box {
-    width: 400px;
-    background: linear-gradient(to bottom right, #153440, #F2DFEB, #D98989);
-    height: auto;
+    width: 800px;
+    background: linear-gradient(to bottom left, #153440, #F2DFEB, #D98989);
+    height: fit-content;
     border: 3px solid #D98989;
     display: inline-block;
     margin: 10px;
@@ -196,15 +200,19 @@ p {
 .about-box article {
     color: #000000;
     text-align: center;
-    font-size: 19px;
+    font-size: 32px;
 }
 
 
 .video{
-    border: 5px solid #D91E0D;
     display: inline-block;
-    margin: 100px;
-    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.video video{
+    border: 5px solid #D91E0D;
 }
 
 /* End of About Page section */
@@ -216,12 +224,14 @@ p {
     align-items: center;
     justify-content: center;
     width:100%;
-    height:100vh;
+    height:100%;
+    padding-bottom: 5%;
+    padding-top: 10%;
     background-position: center;
 }
 
 form{
-    width: 90%;
+    width: 100%;
     max-width: 600px;
 }
 
@@ -229,7 +239,8 @@ form{
 .form-title{
     height: 100%;
     color: #F2DFEB;
-    font-size: 24px;
+    font-size: 20px;
+    padding-top: 5%;
     cursor: text;
     text-align: center;
 }
@@ -258,6 +269,7 @@ label{
 
 button{
     padding: 10px 0;
+    margin-bottom: 15%;
     outline: none;
     color : #fff;
     background: linear-gradient(to top, #D91E0D, #D98989);
@@ -271,7 +283,7 @@ button{
     align-items: center;
     justify-content: center;
     width:100%;
-    height:100vh;
+    height:100%;
     background-position: center;
 }
 
@@ -284,30 +296,37 @@ button{
 }
 
 .section{
+    align-content: center;
+    background-position: center;
     width: 100%;
     height: 100%;
+    text-align: center;
+    align-items: center;
     border: solid 1px #ffffff;
     box-sizing: border-box;
-    margin-bottom: 2.5%;
+    margin-bottom: 5%;
 
 }
 
 
 
-#project1 img, #project2 img , #project3 img {
-    width: 100%;
-    height: 50%;
+#project1 a img, #project2 a img , #project3 a img {
+    display: flex;
+    margin-left: 30%;
+    width: 40%;
     padding-top: 2.5%;
-    object-fit: contain;
+    object-fit: fill;
     border-radius: 15%;
 }
+
 
 #project1 article, #project2 article, #project3 article {
     color: #D98989;
     font-size: 24px;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }
 
 #project1 article h1, #project2 article h1, #project3 article h1{
