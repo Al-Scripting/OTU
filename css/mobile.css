@@ -1,5 +1,5 @@
-@media screen and (max-width: 480px)  {
-    /* Reset styles for all screens */
+@media screen and (max-width: 480px) {
+    /* Reset default styles for all elements */
     * {
         margin: 0;
         padding: 0;
@@ -14,6 +14,7 @@
     }
 
     body {
+        /* Background gradient */
         background: linear-gradient(to right, #153440, #593442);
         min-height: 100vh;
         width: 100%;
@@ -48,7 +49,7 @@
 
     /* Logo styles for tablet */
     #logo {
-        height: 50px; /* Adjust as needed */
+        height: 50px;
     }
 
     .content {
@@ -74,8 +75,7 @@
         font-size: 13px;
         text-align: left;
     }
-    /* End of Header section */
-
+    /* End of Header */
 
     /* Footer section */
     .footer {
@@ -138,7 +138,7 @@
 
     .text-container {
         text-align: center; /* Center-align text for tablet */
-        margin: 10px 0; /* Adjust margin as needed */
+        margin: 10px 0;
         color: white;
     }
 
@@ -168,8 +168,9 @@
         letter-spacing: 0.1rem;
         text-decoration: none;
     }
+    /* End of Home Page */
 
-    /* About Page section */
+    /* About Page */
     .about-section {
         text-align: center; /* Center-align content on tablet */
         padding: 20px; /* Add padding for tablet */
@@ -182,7 +183,7 @@
         width: 100%; /* Full width on tablet */
         height: auto; /* Remove fixed height */
         border: 3px solid #D98989;
-        margin: 5px 0; /* Adjust margin as needed */
+        margin: 5px 0;
         padding: 10px;
     }
 
@@ -201,7 +202,7 @@
     }
 
     .video {
-        margin-bottom: 10%; /* Adjust margin as needed */
+        margin-bottom: 10%;
         padding-bottom: 10%;
     }
 
@@ -211,7 +212,7 @@
         height: auto; /* Maintain the video's aspect ratio */
     }
 
-    /* End of About Page section */
+    /* End of About Page */
 
     /* Contact Page */
     .form-container {
@@ -269,6 +270,7 @@
         background: linear-gradient(to top, #D91E0D, #D98989);
         border: 1px solid #D98989;
     }
+    /* End of Contact Page */
 
     /* Projects Page */
     .Project-area {
@@ -280,14 +282,14 @@
 
     .Project-area h1 {
         font-size: 36px; /* Reduce font size for tablet */
-        margin-top: 5%; /* Adjust margin as needed */
+        margin-top: 5%;
         margin-bottom: 2.5%;
     }
 
     .section {
         width: 100%;
         height: auto; /* Remove fixed height */
-        margin-bottom: 15%; /* Adjust margin as needed */
+        margin-bottom: 15%;
         padding: 10px 10px 10px; /* Add padding for tablet */
     }
 
@@ -300,20 +302,25 @@
         max-height: 200px; /* Set a maximum height for tablet */
         object-fit: contain;
         border-radius: 15%;
-        margin: 10px 0; /* Adjust margin as needed */
+        margin: 10px 0;
     }
 
     /* Adjust text styles for tablet */
-    #project1 article, #project2 article, #project3 article {
+    #project1 article,
+    #project2 article,
+    #project3 article {
         font-size: 18px; /* Reduce font size for tablet */
         text-align: center;
         padding: 10px;
     }
 
-    #project1 article h1, #project2 article h1, #project3 article h1 {
+    #project1 article h1,
+    #project2 article h1,
+    #project3 article h1 {
         font-size: 24px; /* Reduce font size for tablet */
         margin-top: 10px;
         text-align: center;
-        text-decoration: underline; /* Fix the typo in 'text-underline' */
+        text-decoration: underline; /* Corrected from 'text-underline' to 'text-decoration' */
     }
+    /* End of Projects Page */
 }

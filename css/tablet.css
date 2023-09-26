@@ -1,5 +1,5 @@
 @media screen and (min-width: 480px) and (max-width: 920px) {
-    /* Reset styles for all screens */
+    /* Reset default styles for all elements */
     * {
         margin: 0;
         padding: 0;
@@ -14,7 +14,8 @@
     }
 
     body {
-        background: linear-gradient(to right, #153440, #593442);
+        /* Background gradient */
+        background: linear-gradient(#153440, #593442);
         min-height: 100vh;
         width: 100%;
         margin: 0;
@@ -42,6 +43,7 @@
         justify-content: space-between;
         align-items: center;
         text-align: right;
+        margin-bottom: 10px;
         padding: 10px;
     }
 
@@ -74,7 +76,6 @@
         text-align: left;
     }
     /* End of Header section */
-
 
     /* Footer section */
     .footer {
@@ -125,7 +126,7 @@
         color: #F2DFEB;
     }
 
-    /* Main Page section */
+    /* Main Page */
     .main-container {
         display: flex;
         flex-direction: column; /* Stack content for tablet */
@@ -167,8 +168,9 @@
         letter-spacing: 0.1rem;
         text-decoration: none;
     }
+    /* End of Main Page */
 
-    /* About Page section */
+    /* About Page */
     .about-section {
         text-align: center; /* Center-align content on tablet */
         padding: 20px; /* Add padding for tablet */
@@ -200,9 +202,8 @@
     }
 
     .video {
-        margin-bottom: 5%; /* Adjust margin as needed */
-        padding-bottom: 5%;
-        padding-top: 2%;
+        margin-bottom: 10%; /* Adjust margin as needed */
+        padding-bottom: 10%;
     }
 
     /* Resize the video to be smaller than the box */
@@ -210,8 +211,7 @@
         max-width: 100%; /* Ensure the video is not wider than the box */
         height: auto; /* Maintain the video's aspect ratio */
     }
-
-    /* End of About Page section */
+    /* End of About Page */
 
     /* Contact Page */
     .form-container {
@@ -222,7 +222,7 @@
         width: 100%;
         height: auto; /* Remove fixed height */
         margin-top: 3%;
-        padding-bottom: 4%;
+        padding-bottom: 10px;
     }
 
     form {
@@ -269,6 +269,7 @@
         background: linear-gradient(to top, #D91E0D, #D98989);
         border: 1px solid #D98989;
     }
+    /* End of Contact Page */
 
     /* Projects Page */
     .Project-area {
@@ -304,16 +305,21 @@
     }
 
     /* Adjust text styles for tablet */
-    #project1 article, #project2 article, #project3 article {
+    #project1 article,
+    #project2 article,
+    #project3 article {
         font-size: 18px; /* Reduce font size for tablet */
         text-align: center;
         padding: 10px;
     }
 
-    #project1 article h1, #project2 article h1, #project3 article h1 {
+    #project1 article h1,
+    #project2 article h1,
+    #project3 article h1 {
         font-size: 24px; /* Reduce font size for tablet */
         margin-top: 10px;
         text-align: center;
-        text-decoration: underline; /* Fix the typo in 'text-underline' */
+        text-decoration: underline; /* Corrected from 'text-underline' to 'text-decoration' */
     }
+    /* End of Projects Page */
 }
