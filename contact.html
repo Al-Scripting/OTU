@@ -1,81 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set the document character encoding to UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Define the title of the page displayed in the browser tab -->
     <title>Contact</title>
+    <!-- Configure the viewport settings for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Link to the main stylesheet -->
     <link rel='stylesheet' href='css/styles.css' type="text/css" />
+    <!-- Link to a stylesheet for screens with a maximum width of 480px (mobile devices) -->
     <link rel='stylesheet' media='screen and (max-width: 480px)' href='css/mobile.css' />
+    <!-- Link to a stylesheet for screens with a minimum width of 480px and a maximum width of 920px (tablets) -->
     <link rel='stylesheet' media='screen and (min-width: 480px) and (max-width: 920px)' href='css/tablet.css' />
-
 </head>
 <body>
-    <header id="Header">
-        <div class="container">
-            <!-- Navigation -->
-            <a href = "index.html"><img src="Assets/logo.webp" alt="NOT FOUND" id = "logo"></a>
-            <div class="navigation-Bar">
-                <!-- logo -->
-                <div class="content">
-                    <nav class="nav-list">
-                        <a href="index.html" class="element">Home</a>
-                        <a href="about.html" class="element">About</a>
-                        <a href="contact.html" class="element">Contact</a>
-                        <a href="projects.html" class="element">Projects</a>
-                    </nav>
-                </div>
+<!-- Header Section -->
+<header id="Header">
+    <div class="container">
+        <!-- Navigation Bar -->
+        <a href="index.html"><img src="Assets/logo.webp" alt="Logo not found" id="logo"></a>
+        <div class="navigation-Bar">
+            <!-- Content within the navigation bar -->
+            <div class="content">
+                <!-- Navigation List -->
+                <nav class="nav-list">
+                    <a href="index.html" class="element">Home</a>
+                    <a href="about.html" class="element">About</a>
+                    <a href="contact.html" class="element">Contact</a>
+                    <a href="projects.html" class="element">Projects</a>
+                </nav>
             </div>
         </div>
-    </header>
-    <!-- End Header -->
-
-
-    <div class="form-container">
-        <form>
-
-            <div class="form-title">
-                <h1>Contact Page</h1>
-            </div>
-
-
-            <div class="input-section">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Eg: Joe Doe" required>
-            </div>
-
-            <div class="input-section">
-                <label for="number">Phone No.</label>
-                <input type="text" id="number" placeholder="Eg: (123)-456-7890" required>
-            </div>
-
-            <div class="input-section">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" placeholder="Eg: someone@mail.ca" required>
-            </div>
-
-            <div class="input-section">
-                <label for="comments">Comments:</label>
-                <textarea id="comments" rows="8" placeholder="Write something to me!"></textarea>
-
-            </div>
-            <button type="submit">Submit</button>
-        </form>
     </div>
-    <!-- END of Form -->
+</header>
+<!-- End of Header Section -->
 
-
-    <!-- Footer Section  -->
-    <footer class="footer">
-        <div class="left-content">
-            <p class="email">mohamealmusqi.mohamedshifan@ontariotechu.net</p>
-            <p class="copy-right">© 2021 Al-Muqshith Shifan</p>
+<!-- Contact Form Section -->
+<div class="form-container">
+    <form>
+        <!-- Form Title -->
+        <div class="form-title">
+            <h1>Contact Page</h1>
         </div>
-        <div class="right-content">
-            <img src="Assets/Kirby.webp" alt="Logo">
-            <img src="Assets/kirby-puffy.png" alt="Hover Image" id="hover-image" />
-        </div>
-    </footer>
-    <!-- End of Footer Section  -->
 
+        <!-- Input Fields for Name -->
+        <div class="input-section">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Eg: Joe Doe" required>
+        </div>
+
+        <!-- Input Fields for Phone Number -->
+        <div class="input-section">
+            <label for="number">Phone No.</label>
+            <input type="text" id="number" placeholder="Eg: (123)-456-7890" required>
+        </div>
+
+        <!-- Input Fields for Email Address -->
+        <div class="input-section">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Eg: someone@mail.ca" required>
+        </div>
+
+        <!-- Input Field for Comments -->
+        <div class="input-section">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" rows="8" placeholder="Write something to me!"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<!-- End of Contact Form Section -->
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="left-content">
+        <!-- Email Address in the Footer -->
+        <p class="email">mohamealmusqi.mohamedshifan@ontariotechu.net</p>
+        <!-- Copyright Information -->
+        <p class="copy-right">© 2021 Al-Muqshith Shifan</p>
+    </div>
+    <div class="right-content">
+        <!-- Kirby Logo Image -->
+        <img src="Assets/Kirby.webp" alt="Kirby Logo">
+        <!-- Hover Image for Kirby Logo -->
+        <img src="Assets/kirby-puffy.png" alt="Hover Image" id="hover-image" />
+    </div>
+</footer>
+<!-- End of Footer Section -->
 </body>
 </html>
